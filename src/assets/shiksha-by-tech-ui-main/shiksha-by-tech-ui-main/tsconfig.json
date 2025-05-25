@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    /* ✨ Target & Environment */
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "jsx": "react-jsx",
+    "moduleResolution": "Node",
+
+    /* 🧠 Strictness & Type Safety */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": true,
+
+    /* 🔧 JS & Interop Support */
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "skipLibCheck": true,
+    "downlevelIteration": true,
+
+    /* 📦 Output Control */
+    "noEmit": true,
+    "sourceMap": true,
+
+    /* 📁 Path Aliases */
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"],
+      "@routes/*": ["src/routes/*"],
+      "@api/*": ["src/apiActions/*"],
+      "@forms/*": ["src/forms/*"],
+      "@config/*": ["src/config/*"],
+      "@queries/*": ["src/queries/*"],
+      "@interfaces/*": ["src/interfaces/*"],
+      "@enums/*": ["src/interfaces/*"],
+      "@services/*": ["src/services/*"],
+      "@types/*": ["src/types/*"],
+      "@utils/*": ["src/utils/*"],
+      "@store/*": ["src/store/*"],
+      "@constants/*": ["src/constants/*"],
+      "@context/*": ["src/context/*"],
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@pages/*": ["src/pages/*"],
+      "@hooks/*": ["src/hooks/*"],
+      "@features/*": ["src/features/*"],
+      "@assets/*": ["src/assets/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
